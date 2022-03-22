@@ -207,6 +207,7 @@
                       <li><a href="https://www.instagram.com/giacomodifabrizio_/"><i class="fab fa-instagram-square "></i></a></li>
                       <li><a href="https://api.whatsapp.com/send?phone=+393892530814"><i class="fab fa-whatsapp-square "></i></a></li>
                       <li><a href="https://paypal.me/gdf00"><i class="fab fa-paypal "></i></a></li>
+                      <li><a href= "https://www.youtube.com/channel/UC97V4aSkwyeCZTJJoYy4MVw"><i class="fab fa-youtube "></i></a></li>
                     </ul>
                   </div>
                   <p class="lorem-text animate__animated animate__zoomIn animate__delay-2-5s">I am a third-year computer science student, intending to complete the master's degree as well.
@@ -325,6 +326,7 @@
                               <li><a href="https://www.instagram.com/giacomodifabrizio_/"><i class="fab fa-instagram-square"></i></a></li>
                               <li><a href="https://api.whatsapp.com/send?phone=+393892530814"><i class="fab fa-whatsapp-square"></i></a></li>
                               <li><a href="https://paypal.me/gdf00"><i class="fab fa-paypal"></i></a></li>
+                              <li><a href= "https://www.youtube.com/channel/UC97V4aSkwyeCZTJJoYy4MVw"><i class="fab fa-youtube "></i></a></li>
                             </ul>
                           </div>
                         </div>
@@ -861,8 +863,8 @@
                             name="subject" placeholder="Subject" required=""></div>
                         <div class="col-12 form-group form-message"><textarea class="form-control" id="contact-message"
                             name="message" placeholder="Message" rows="5" required=""></textarea></div>
-                        <div class="col-12 mb-4 form-submit"><button class="clickbtn button-main button-scheme"
-                            id="contact-submit" type="submit">Send Message</button>
+                        <div class="col-12 mb-4 form-submit"><button onclick='sendMail()' class="clickbtn button-main button-scheme"
+                            id="contact-submit" type="button">Send Message</button>
                         </div>
                       </div>
                     </form>
@@ -918,6 +920,7 @@
                         <li><a href="https://www.instagram.com/giacomodifabrizio_/"><i class="fab fa-instagram-square "></i></a></li>
                         <li><a href="https://api.whatsapp.com/send?phone=+393892530814"><i class="fab fa-whatsapp-square "></i></a></li>
                         <li><a href="https://paypal.me/gdf00"><i class="fab fa-paypal "></i></a></li>
+                        <li><a href= "https://www.youtube.com/channel/UC97V4aSkwyeCZTJJoYy4MVw"><i class="fab fa-youtube "></i></a></li>
                       </ul>
                     </div>
                   </div>
@@ -981,6 +984,14 @@
   <script src="assets/js/init.js"></script>
   <!-- Custom Js -->
   <script src="assets/js/custom.js"></script>
+
+<script src="assets/js/email.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+  (function() {
+    emailjs.init("JMzt-osgXiUlBc7Tx");
+    })();
+    </script>
 
 </body>
 
